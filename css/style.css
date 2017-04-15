@@ -1,0 +1,33 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.centered{
+	width: 84.5%;
+	margin: 0 auto;
+}
+.outer-container {
+	background: url('../img/background.png') right repeat fixed;
+	opacity: 0.5;
+}
+.container {
+	background: white;
+	opacity: 1;                         /* переопределила прозрачность, почему у дочерних элементов она определяется классом outer-container? */
+}
+.header {
+	height: 131px;
+}
+.contacts {
+
+	font: italic 24pt/24pt Verdana Italic;
+	color: #003165;
+}
+.contacts div{
+	margin-left: auto;
+	margin-right: 189px;
+}
+
+.adress {
+	font-size: 15pt;
+}
+	
