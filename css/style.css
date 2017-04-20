@@ -70,18 +70,6 @@
 	padding-left:19px;
 	padding-top:25px;
 	display: table;
-	float: left;
-}
-.navbar li{
-	list-style-type: none;
-	width: 232px;
-	text-align: center;
-	height: 42px;
-	width: 232px;
-	display: table-row;
-}
-.navbar li:last-child {
-	border-bottom: 2px solid black;      /* почему съехала рамка и не перекрывает предыдущую? */
 }
 .navbar a{
 	color: black;
@@ -94,6 +82,11 @@
 	height: 42px;
 	width: 232px;
 	vertical-align: middle;
+
+
+}
+.navbar li:last-child {
+	border-bottom: 2px solid black;      /* почему съехала рамка и не перекрывает предыдущую? */
 }
 .navbar a:hover {                               /* почему не распространяется на ласт чайлд? */
 	background: #89beda;
@@ -106,28 +99,22 @@
     background: linear-gradient(to bottom, #89beda 0%, #5baad3 100%);
 	color: white;
 }
-.picture {
-	float: right;
-	margin: -73px 17px 0px 0px;
+.navbar li{
+	list-style-type: none;
+	width: 232px;
+	text-align: center;
+	height: 42px;
+	width: 232px;
+	display: table-row;
 }
-.slogan{
-	float: right;
-	box-shadow: 0 0 20px #d9e1e8;
-	background-color: rgba(255, 255, 255, 0.7);
-	width: 360px;
-	height: 20px;
-	margin-top: -84px;
-	padding: 9px 16px;
-	font-family: Verdana;
-	font-style: italic;
-	font-size: 12pt;
+.picture {
+	display: inline-block;
+	margin: -73px 17px 0px 20px;
 }
 .info {
-	clear: both;
-	float: left;
-	margin-top: -67px;
+	padding-top: 37px;
 	font: italic 16pt verdana;
-	padding-left: 18px;
+	margin-left: 18px;
 }
 .info li{
 	font: 10.5pt verdana regular;
@@ -147,42 +134,12 @@
 }
 .content {
 	margin-left: 268px;
-	margin-right: 18px;
 	font-family: verdana;
 	font-size: 13px;
-	line-height: 19px;
 }
 .content h1{
 	font-family: verdana;
 	font-style: italic;
 	font-size: 22px;
-	font-weight: normal;
-	padding-bottom: 19px;
 }
-.footer_bgcolor {
-	
-	height: 97px;
-	box-shadow: 0 0 30px #b2b2b2;
-	background: linear-gradient(bottom,#a2daf6 0%, #4c9cc7 100%);
-	background: -moz-linear-gradient(bottom,#a2daf6 0%, #4c9cc7 100%);
-    background: -webkit-gradient(linear, left bottom, right bottom, color-stop(0%, #a2daf6), color-stop(100%, #4c9cc7));
-    background: -webkit-linear-gradient(bottom, #a2daf6 0%, #4c9cc7 100%);
-    background: -o-linear-gradient(bottom, #a2daf6 0%, #4c9cc7 100%);
-    background: -ms-linear-gradient(bottom, #a2daf6 0%, #4c9cc7 100%);
-    background: linear-gradient(to bottom, #a2daf6 0%, #4c9cc7 100%);
-}
-.footer {
-	margin-top: 46px;
-	padding-left: 20px;
-	padding-top: 18px;
-	padding-right: 18px;
-	color: white;
-}
-.left_col{
-	float: left;
-}
-.right_col {
-	float: right;
-}
-
 	
