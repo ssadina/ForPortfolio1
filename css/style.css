@@ -8,26 +8,138 @@
 }
 .outer-container {
 	background: url('../img/background.png') right repeat fixed;
-	opacity: 0.5;
+}
+.background_opacity {                                  /* блок для создания прозрачности фона - нерабочий */
+	background-color: white;
+	opacity: 0.1;
+	width: 100%;
+	height: 100%;
 }
 .container {
 	background: white;
-	opacity: 1;                         /* переопределила прозрачность, почему у дочерних элементов она определяется классом outer-container? */
 }
 .header {
 	height: 131px;
+	
 }
-.contacts {
-
-	font: italic 24pt/24pt Verdana Italic;
+.logo {
+	padding: 34px 0px 57px 29px;
+	width: 415px;
+	display: inline-block;
+	vertical-align: top;
+}
+.contacts {                               
+	float: right; 
+	padding: 33px 187px 8px 0;
+	font: italic 18pt/20pt Verdana;         /* почему-то шрифты меньше, чем в фотошопе */  
 	color: #003165;
+	display: inline-block;
+	vertical-align: top;
+	text-align: right;
+	letter-spacing: -0.4px;
 }
-.contacts div{
-	margin-left: auto;
-	margin-right: 189px;
+.number1 {
+	padding-bottom: 8px;
+	letter-spacing: -0.5px;
+	
 }
-
+.number2 {
+	padding-bottom: 7px;
+	
+}
 .adress {
-	font-size: 15pt;
+	font-size: 12pt;
+	letter-spacing: -0.5px;
+	padding-right: 2px;
+}
+.gradient-line{
+	clear: both;
+	background: #b4d6e9;
+	background: linear-gradient(left,#ffffff 10%, #b4d6e9 50%, #ffffff 90%);
+	background: -moz-linear-gradient(left,#ffffff 10%, #b4d6e9 50%, #ffffff 90%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(10%, #ffffff), color-stop(100%, #b4d6e9), color-stop(10%, #ffffff));
+    background: -webkit-linear-gradient(left, #ffffff 10%, #b4d6e9 50%, #ffffff 90%);
+    background: -o-linear-gradient(left, #ffffff 10%, #b4d6e9 50%, #ffffff 90%);
+    background: -ms-linear-gradient(left, #ffffff 10%, #b4d6e9 50%, #ffffff 90%);
+    background: linear-gradient(to right, #ffffff 10%, #b4d6e9 50%, #ffffff 90%);
+	height: 2px;
+    width: 100%;
+}
+.navbar {
+	margin:0;
+	padding-left:19px;
+	padding-top:25px;
+	display: table;
+}
+.navbar a{
+	color: black;
+	font-family: verdana;
+	font-size: 12pt;
+	text-decoration:none;
+	display: table-cell;
+	margin: auto;
+	border-bottom: 2px solid #e3e3e3;
+	height: 42px;
+	width: 232px;
+	vertical-align: middle;
+
+
+}
+.navbar li:last-child {
+	border-bottom: 2px solid black;      /* почему съехала рамка и не перекрывает предыдущую? */
+}
+.navbar a:hover {                               /* почему не распространяется на ласт чайлд? */
+	background: #89beda;
+	background: linear-gradient(bottom,#89beda 0%, #5baad3 100%);
+	background: -moz-linear-gradient(bottom,#89beda 0%, #5baad3 100%);
+    background: -webkit-gradient(linear, left bottom, right bottom, color-stop(0%, #89beda), color-stop(100%, #5baad3));
+    background: -webkit-linear-gradient(bottom, #89beda 0%, #5baad3 100%);
+    background: -o-linear-gradient(bottom, #89beda 0%, #5baad3 100%);
+    background: -ms-linear-gradient(bottom, #89beda 0%, #5baad3 100%);
+    background: linear-gradient(to bottom, #89beda 0%, #5baad3 100%);
+	color: white;
+}
+.navbar li{
+	list-style-type: none;
+	width: 232px;
+	text-align: center;
+	height: 42px;
+	width: 232px;
+	display: table-row;
+}
+.picture {
+	display: inline-block;
+	margin: -73px 17px 0px 20px;
+}
+.info {
+	padding-top: 37px;
+	font: italic 16pt verdana;
+	margin-left: 18px;
+}
+.info li{
+	font: 10.5pt verdana regular;
+	list-style-type: none;
+	margin-left: 10px;
+	padding-top: 10px;
+}
+.info a {
+	text-decoration: none;
+	color: black;
+	border-bottom: 2px solid #adadad;
+}
+.info a:hover {
+	text-decoration: underline;
+	color: #0a80be;
+	border-bottom: 2px solid #a4c6e0; /*? опять все поехало, нужнв ли вообще рамка?*/
+}
+.content {
+	margin-left: 268px;
+	font-family: verdana;
+	font-size: 13px;
+}
+.content h1{
+	font-family: verdana;
+	font-style: italic;
+	font-size: 22px;
 }
 	
